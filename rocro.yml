@@ -1,3 +1,11 @@
 inspecode:
-  checkstyle: auto-fix
-  pmd: auto-fix
+
+  checkstyle:
+    #condif-file: buildSrc/src/main/resources/checkstyle.xml  # not work with `options:`
+    options:
+      -c: buildSrc/src/main/resources/checkstyle.xml
+      -p: inspecode-checkstyle.properties
+    auto-fix: true   # Failed, caused by `-p` is not effective
+
+  pmd:
+    auto-fix: true
