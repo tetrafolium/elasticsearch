@@ -1,11 +1,8 @@
 inspecode:
 
   checkstyle:
-    #condif-file: buildSrc/src/main/resources/checkstyle.xml  # not work with `options:`
-    options:
-      -c: buildSrc/src/main/resources/checkstyle.xml
-      -p: inspecode-checkstyle.properties
-    auto-fix: true   # Failed, caused by `-p` is not effective
+    condif-file: inspecode/checkstyle-alt.xml
+    auto-fix: true
 
   pmd:
     auto-fix: true
