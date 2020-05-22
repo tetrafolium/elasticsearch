@@ -1,7 +1,7 @@
 inspecode:
 
   checkstyle:
-    condif-file: inspecode/checkstyle-alt.xml
+    config-file: inspecode/checkstyle-alt.xml
     auto-fix: true
 
   pmd:
